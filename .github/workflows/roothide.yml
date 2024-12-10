@@ -16,8 +16,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@main
         with:
-          repositrory: roothide/Dopamine2-roothide
+          repository: roothide/Dopamine2-roothide
           submodules: recursive
+          fetch-depth: 0
 
       - name: Install Procursus
         uses: dhinakg/procursus-action@main
